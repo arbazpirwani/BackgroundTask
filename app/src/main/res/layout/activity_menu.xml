@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MenuActivity">
+
+
+    <TextView
+        android:id="@+id/textViewHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/extra_xxxlarge_margin"
+        android:text="@string/menu_heading"
+        android:textColor="#000"
+        android:textSize="@dimen/extra_large_text_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonResultThreadTask"
+        style="@style/simple_button_style"
+        android:text="@string/task_with_thread"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewHeading" />
+
+    <Button
+        android:id="@+id/buttonResultAsyncTask"
+        style="@style/simple_button_style"
+        android:text="@string/async_task"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonResultThreadTask" />
+
+    <Button
+        android:id="@+id/buttonResultAsyncTaskLoader"
+        style="@style/simple_button_style"
+        android:text="@string/async_task_loader"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonResultAsyncTask" />
+
+
+    <Button
+        android:id="@+id/buttonPowerReceiver"
+        style="@style/simple_button_style"
+        android:text="@string/power_receiver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonResultAsyncTaskLoader" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
